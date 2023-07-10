@@ -1,0 +1,20 @@
+total 68
+drwxr-xr-x 2 root root 4096 Jul 10 04:04 .
+drwxr-xr-x 6 root root  139 Jul 10 02:03 ..
+-rwxr-xr-x 1 root root   32 Jul 10 02:07 0-hello_world
+-rwxr-xr-x 1 root root   28 Jul 10 02:18 1-confused_smiley
+-rwxr-xr-x 1 root root   27 Jul 10 02:17 1-confused_smiley~
+-rwxr-xr-x 1 root root   28 Jul 10 02:22 2-hellofile
+-rwxr-xr-x 1 root root   39 Jul 10 02:35 3-twofiles
+-rwxr-xr-x 1 root root   29 Jul 10 02:44 4-lastlines
+-rwxr-xr-x 1 root root   29 Jul 10 02:49 5-firstlines
+-rwxr-xr-x 1 root root   40 Jul 10 03:28 6-third_line
+-rwxr-xr-x 1 root root   86 Jul 10 03:58 7-file
+-rwxr-xr-x 1 root root   86 Jul 10 03:57 7-file~
+-rwxr-xr-x 1 root root   36 Jul 10 04:04 8-cwd_state
+-rw-r--r-- 1 root root    0 Jul 10 04:04 ls_cwd_content
+-rw-r--r-- 1 root root   48 Jul 10 02:04 README.md
+-rwxr-xr-x 1 root root  266 Jul 10 02:15 script-initial
+-rwxr-xr-x 1 root root  290 Jul 10 02:13 script-initial~
+-rwxr-xr-x 1 root root  128 Jul 10 02:13 script-push
+-rw-r--r-- 1 root root   21 Jul 10 03:22 test.txt~
