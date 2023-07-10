@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./0-hello_world ./10-no_more_js ./11-directories ./1-confused_smiley ./1-confused_smiley~ ./2-hellofile ./3-twofiles ./4-lastlines ./5-firstlines ./6-third_line ./7-file ./7-file~ ./8-cwd_state ./9-duplicate_last_line ./README.md ./script-initial ./script-initial~ ./script-push ./test ./test-lines ./test.txt~ -type d | wc -l
+find ./* -type d | wc -l
