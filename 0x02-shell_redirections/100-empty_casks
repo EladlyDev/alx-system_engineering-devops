@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./* -type f -size 0c | cut -d '/' -f 2- | rev | sort | rev| head -1
+find ./* -empty | rev | cut -d '/' -f 1 | rev
