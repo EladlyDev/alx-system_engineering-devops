@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# displays "Best School" 10 times.
+
+s="Best School"
+i=10
+
+until [ $i -eq 0 ]
+do
+	echo "$s"
+	i=$(( i - 1 ))
+done
