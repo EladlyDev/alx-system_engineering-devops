@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# stops the 7-highlander
+################################################
+
+
+kill -14 "$(pgrep -f 7-highlander)"
