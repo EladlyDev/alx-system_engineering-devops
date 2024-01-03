@@ -1,0 +1,5 @@
+#+title: Regular Expressions
+
+* What is regular expressions?
+Regular expressions is a special set of characters with special meaning
+it's like a wild card used to search a pattern in a text.
