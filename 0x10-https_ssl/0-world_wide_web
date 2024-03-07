@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#  display information about subdomains.
+get-data () {
+    ans=$(dig $1 | grep -A1 "ANSWER SECTION")
+    data=$(echo $ans | awk '{print $4" "$7" "$8}')
+    sub=$(echo $data | awk -F '.' '{print $1}')
+    rec=$(echo $data | awk '{print $2}')
+    ip=$(echo $data | awk '{print $3}')
+    echo "The subdomain $sub is a $rec record and points to $ip"
+}
+
+domain=$1
+sub=$2
+
+if [[ ${#domain} -gt 0 ]]; then
+    if [[ ${#sub} -gt 0 ]]; then
+	domains=("$sub.$domain")
+    else
+	domains=("www.$domain" "lb-01.$domain" "web-01.$domain" "web-02.$domain")
+    fi
+
+    for link in "${domains[@]}"; do
+	get-data $link
+    done
+fi
