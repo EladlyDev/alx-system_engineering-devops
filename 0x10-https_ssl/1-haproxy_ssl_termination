@@ -37,12 +37,8 @@ frontend for_client_hits
         bind :80
         bind :443 ssl crt /etc/haproxy/cert.pem
         http-request redirect scheme https code 301 unless { ssl_fc }
-        timeout client 60s
         default_backend all_servers
 
 backend all_servers
-        timeout connect 10s
-        timeout server 10s
-
         server web-01 34.232.68.194:80 check
         server web-02 54.173.210.20:80 check
