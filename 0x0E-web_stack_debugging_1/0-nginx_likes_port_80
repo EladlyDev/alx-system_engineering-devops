@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # opens port 80 for nginx to use
-# kill whatever is running on port 80
-sudo fuser -k 80/tcp
-# restarting nginx
-sudo service nginx start
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
