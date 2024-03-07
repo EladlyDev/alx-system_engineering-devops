@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# opens port 80 for nginx to use
+# kill whatever is running on port 80
+sudo fuser -k 80/tcp
+# restarting nginx
+sudo service nginx start
