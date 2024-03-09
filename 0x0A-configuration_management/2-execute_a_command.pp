@@ -1,4 +1,4 @@
-# Terminates the process `killmenow`
-exec { 'killmenow':
+# Kills a process by its name
+exec {'pkill killmenow':
   command => '/usr/bin/pkill killmenow'
 }
