@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# tells the master Gunicorn renewed all the workers.
+pgrep gunicorn | xargs kill -HUP
